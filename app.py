@@ -30,7 +30,7 @@ def on_disconnect():
 broadcast=True)
 # 同步更新線上人數
     broadcast_user_count()
-        print("Client disconnect:", request.sid) # 顯示斷線 SID
+    print("Client disconnect:", request.sid) # 顯示斷線 SID
 # 使用者剛進入聊天室時觸發，會發送他的使用者名稱
 @socketio.on("join")
 def on_join(data):
